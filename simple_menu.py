@@ -159,7 +159,7 @@ def Coffee_Menu():
                 print("Here is your LATE coffee. Enjoy. :) ")
                 Main_Menu()
             elif coffee_menu_choice_convert == 4:
-                print("Here is your AMERIANO coffee. Enjoy. :) ")
+                print("Here is your AMERICANO coffee. Enjoy. :) ")
                 Main_Menu()
             elif coffee_menu_choice_convert == 5:
                 print("Here is your CORTADO coffee. Enjoy. :) ")

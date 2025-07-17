@@ -5,6 +5,8 @@
 #	This is the main menu.
 def Main_Menu():
 
+    print("")
+
     print("Welcome to the fake shop")
     print("Here are your options.")
     
@@ -32,17 +34,23 @@ def Main_Menu():
         #   Next, check to see if the number is greater than 0 (not a negative) and less than 
         #   the total number of options.
         if menu_choice_convert > 0 and menu_choice_convert < 6:
-    
-            if menu_choice_convert == 1:  
-                Say_Hello()
-            elif menu_choice_convert == 2:
-                Coffee_Menu()
-            elif menu_choice_convert == 3:
-                Tea_Menu()
-            elif menu_choice_convert == 4:
-                Specials_Menu()
-            elif menu_choice_convert == 5:
-                Goodbye()
+        
+            match (menu_choice_convert):
+            
+                case (1):
+                    Say_Hello()
+                    
+                case (2):
+                    Coffee_Menu()
+                    
+                case (3):
+                    Tea_Menu()
+                    
+                case (4):
+                    Specials_Menu()
+                    
+                case (5):
+                    Goodbye()
                 
         else:
             Main_Menu()
@@ -93,25 +101,32 @@ def Tea_Menu():
         
         if tea_menu_choice_convert > 0 and tea_menu_choice_convert < 7:
         
-            if tea_menu_choice_convert == 1:
-                print("Here is your REGULAR tea. Enjoy. :) ")
-                Main_Menu()
-            elif tea_menu_choice_convert == 2:
-                print("Here is your DECAFF tea. Enjoy. :) ")
-                Main_Menu()
-            elif tea_menu_choice_convert == 3:
-                print("Here is your MINT tea. Enjoy. :) ")
-                Main_Menu()
-            elif tea_menu_choice_convert == 4:
-                print("Here is your GINGER AND LEMON tea. Enjoy. :) ")
-                Main_Menu()
-            elif tea_menu_choice_convert == 5:
-                print("Here is your ICED tea. Enjoy. :) ")
-                Main_Menu()
-            elif tea_menu_choice_convert == 6:
-                print("You want to go back to the MAIN MENU? OK.")
-                Main_Menu()
-        
+            match (tea_menu_choice_convert):
+            
+                case (1):
+                    print("Here is your REGULAR tea. Enjoy. :) ")
+                    Main_Menu()
+                    
+                case (2):
+                    print("Here is your DECAFF tea. Enjoy. :) ")
+                    Main_Menu()
+                    
+                case (3):
+                    print("Here is your MINT tea. Enjoy. :) ")
+                    Main_Menu()
+                    
+                case (4):
+                    print("Here is your GINGER AND LEMON tea. Enjoy. :) ")
+                    Main_Menu()
+                    
+                case (5):
+                    print("Here is your ICED tea. Enjoy. :) ")
+                    Main_Menu()
+                    
+                case (6):
+                    print("You want to go back to the MAIN MENU? OK.")
+                    Main_Menu()
+       
         else:
             Tea_Menu()
     
@@ -149,33 +164,44 @@ def Coffee_Menu():
         
         if coffee_menu_choice_convert > 0 and coffee_menu_choice_convert < 10:
         
-            if coffee_menu_choice_convert == 1:
-                print("Here is your REGULAR coffee. Enjoy. :) ")
-                Main_Menu()
-            elif coffee_menu_choice_convert == 2:
-                print("Here is your DECAFF coffee. Enjoy. :) ")
-                Main_Menu()
-            elif coffee_menu_choice_convert == 3:
-                print("Here is your LATE coffee. Enjoy. :) ")
-                Main_Menu()
-            elif coffee_menu_choice_convert == 4:
-                print("Here is your AMERICANO coffee. Enjoy. :) ")
-                Main_Menu()
-            elif coffee_menu_choice_convert == 5:
-                print("Here is your CORTADO coffee. Enjoy. :) ")
-                Main_Menu()
-            elif coffee_menu_choice_convert == 6:
-                print("Here is your ESPRESSO coffee. Enjoy. :) ")
-                Main_Menu()
-            elif coffee_menu_choice_convert == 7:
-                print("Here is your CAPPACINO coffee. Enjoy. :) ")
-                Main_Menu()
-            elif coffee_menu_choice_convert == 8:
-                print("Here is your ICED coffee. Enjoy. :) ")
-                Main_Menu()
-            elif coffee_menu_choice_convert == 9:
-                print("You want to go back to the MAIN MENU? OK. ")
-                Main_Menu()
+            match (coffee_menu_choice_convert):
+            
+                case (1):
+                    print("Here is your REGULAR coffee. Enjoy. :) ")
+                    Main_Menu()
+                    
+                case (2):
+                    print("Here is your DECAFF coffee. Enjoy. :) ")
+                    Main_Menu()                
+                
+                case (3):
+                    print("Here is your LATE coffee. Enjoy. :) ")
+                    Main_Menu()
+                    
+                case (4):
+                    print("Here is your AMERIANO coffee. Enjoy. :) ")
+                    Main_Menu()
+                    
+                case (5):
+                    print("Here is your CORTADO coffee. Enjoy. :) ")
+                    Main_Menu()
+                
+                case (6):
+                    print("Here is your ESPRESSO coffee. Enjoy. :) ")
+                    Main_Menu()
+                    
+                case (7):
+                    print("Here is your CAPPACINO coffee. Enjoy. :) ")
+                    Main_Menu()
+                    
+                case (8):
+                    print("Here is your ICED coffee. Enjoy. :) ")
+                    Main_Menu()
+                    
+                case (9):
+                    print("You want to go back to the MAIN MENU? OK. ")
+                    Main_Menu()
+
         else:
             Coffee_Menu()
     
@@ -208,21 +234,28 @@ def Specials_Menu():
         
         if specials_menu_choice_convert > 0 and specials_menu_choice_convert < 6:
         
-            if specials_menu_choice_convert == 1:
-                print("Here is your HOT CHOCOLATE special. Enjoy. :) ")
-                Main_Menu()
-            elif specials_menu_choice_convert == 2:
-                print("Here is your CHILI CHOCOLATE special. Enjoy. :) ")
-                Main_Menu()
-            elif specials_menu_choice_convert == 3:
-                print("Here is your FROTHY MILK special. Enjoy. :) ")
-                Main_Menu()
-            elif specials_menu_choice_convert == 4:
-                print("Here is your WATER AND LEMON special. Enjoy. :) ")
-                Main_Menu()
-            elif specials_menu_choice_convert == 5:
-                print("You want to go back to the MAIN MENU? OK. ")
-                Main_Menu()
+            match (specials_menu_choice_convert):
+            
+                case (1):
+                    print("Here is your HOT CHOCOLATE special. Enjoy. :) ")
+                    Main_Menu()
+                
+                case (2):
+                    print("Here is your CHILI CHOCOLATE special. Enjoy. :) ")
+                    Main_Menu()
+                
+                case (3):
+                    print("Here is your FROTHY MILK special. Enjoy. :) ")
+                    Main_Menu()
+                    
+                case (4):
+                    print("Here is your WATER AND LEMON special. Enjoy. :) ")
+                    Main_Menu()
+                    
+                case (5):
+                    print("You want to go back to the MAIN MENU? OK. ")
+                    Main_Menu()
+
         else:
         
             Specials_Menu()
